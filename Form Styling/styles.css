@@ -1,0 +1,120 @@
+/* 1 - BASE FORM STYLES */
+body {
+  background-color: #141414;
+  color: white;
+}
+header {
+  text-align: center;
+}
+/* 2 - Radio STYLES  */
+
+input[type='radio'] {
+  opacity: 0;
+  width: 0;
+  margin: 0;
+}
+label[for='male'],
+label[for='female'] {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding-left: 26px;
+  background: url(img/checks.png) no-repeat;
+  background-position: 0 -32px;
+  cursor: pointer;
+  line-height: 24px;
+}
+input:checked + label[for='male'],
+input:checked + label[for='female'] {
+  background-position: 0 0;
+  color: red;
+}
+/* 3 - Checkbox */
+
+input[type='checkbox'] {
+  opacity: 0;
+  width: 0;
+  margin: 0;
+}
+
+label[for='web'],
+label[for='photoshop'],
+label[for='madona'] {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding-left: 26px;
+  background: url(img/checks.png) no-repeat;
+  background-position: 0 -98px;
+  cursor: pointer;
+  line-height: 24px;
+}
+input:checked + label[for='web'],
+input:checked + label[for='photoshop'],
+input:checked + label[for='madona'] {
+  background-position: 0 -65px;
+  color: red;
+}
+/* 4.  input */
+fieldset {
+  padding: 20px;
+  margin: 20px 0;
+  border: 3px solid #222;
+}
+legend {
+  padding: 10px;
+  font-size: 18px;
+  letter-spacing: 0.1rem;
+}
+input[type='email'],
+input[type='telephone'] {
+  display: block;
+  margin-bottom: 20px;
+  width: 280px;
+  padding: 10px 10px 10px 50px;
+  background: url(img/inputs.png) no-repeat;
+  background-color: #222;
+  border: 0;
+  border-radius: 4px;
+  color: white;
+  font-size: 16px;
+}
+input[type='email'] {
+  background-position: 7px 8px;
+}
+input[type='telephone'] {
+  background-position: 7px -60px;
+}
+
+/* 5 - SELECT BOXES */
+
+select {
+  appearance: none;
+  /* display: block; */
+  padding: 10px 50px 10px 10px;
+  margin: 15px 20px 0px 0px;
+  background: url(img/select.png) no-repeat;
+  background-position: 95% center;
+  background-color: #222;
+  color: white;
+  border: 2px solid white;
+  width: 280px;
+  border-radius: 4px;
+}
+
+input[type='submit'] {
+  padding: 8px;
+  background-color: red;
+  font-size: 20px;
+  /* font-weight: 700; */
+  color: #fff;
+  border: 0;
+  border-radius: 4px;
+  letter-spacing: 0.1rem;
+  width: 280px;
+  outline: 1px solid red;
+  box-shadow: 1px 3ps 5px rgba(0, 0, 0, 0.5);
+}
+/* 6 - INPUT VALIDATION STYLES */
+input[type='email']:valid,
+input[type='telephone']:valid {
+  border: 2px solid #fff;
+}
