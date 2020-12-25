@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+  --orange: #f27e22;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+/* header */
+.header {
+  background: radial-gradient(#fff, #ffd6d6);
+  min-height: 100vh;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar > * {
+  flex: 1;
+}
+.logo {
+  width: 180px;
+}
+#nav-items {
+  display: flex;
+  justify-content: space-around;
+  transition: all 0.3s;
+}
+.menubar {
+  display: none;
+}
+************** .btn-orange {
+  background-color: var(--orange);
+  transition: all 0.5s;
+}
+.btn-orange:hover {
+  background-color: rgba(54, 16, 3, 0.781);
+}
+
+/* featured products */
+.featured-products i {
+  color: var(--orange);
+}
+.featured-products i:first-child {
+  margin-left: 0 !important;
+}
+.featured-products h1 {
+  position: relative;
+  font-size: 3rem;
+  line-height: 3rem;
+}
+.featured-products h1::after {
+  position: absolute;
+  content: '';
+  bottom: 48%;
+  width: 40%;
+  height: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--orange);
+}
+.single-product {
+  transition: all 0.5s ease-in-out;
+  padding: 2%;
+}
+.single-product:hover {
+  transform: translateY(-2%);
+}
+
+/* latest products */
+.latest-products i {
+  color: var(--orange);
+}
+.latest-products h1 {
+  position: relative;
+  font-size: 3rem;
+  line-height: 3rem;
+}
+.latest-products h1::after {
+  position: absolute;
+  content: '';
+  bottom: 48%;
+  width: 32%;
+  height: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--orange);
+}
+
+/* offer */
+.offer-product {
+  background: radial-gradient(#fff, #ffd6d6);
+}
+.offer-img {
+  padding: 6%;
+}
+
+/* testimonial */
+.testomonial-img {
+  width: 25%;
+  border-radius: 50%;
+}
+.testimonial {
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+}
+.testimonial:hover {
+  transform: translateY(-10px);
+}
+.testimonial p {
+  font-size: 0.8rem;
+}
+.fa.fa-quote-left {
+  font-size: 2rem;
+  color: var(--orange);
+}
+
+/* brands */
+.brands img {
+  filter: grayscale(100%);
+  transition: all 0.3s;
+}
+.brands img:hover {
+  filter: grayscale(0%);
+}
+.opacity-nav {
+  opacity: 1;
+}
+@media (max-width: 768px) {
+  .menubar {
+    display: block;
+    position: absolute;
+    top: 1%;
+    right: 2%;
+    width: 4%;
+    z-index: 10000;
+  }
+
+  #nav-items {
+    flex-direction: column;
+    text-align: center;
+    position: absolute;
+    top: 10%;
+    left: 0%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    max-height: 0px;
+  }
+  nav ul a {
+    color: white;
+  }
+}
+@media (max-width: 567px) {
+  .logo {
+    width: 100px;
+  }
+}
+
+/* product-details */
+.small-image-row {
+  display: flex;
+  justify-content: space-between;
+}
+.small-image-col {
+  flex-basis: 25%;
+}

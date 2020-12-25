@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Titillium+Web:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #09131b;
+  color: #ffffff;
+  min-height: 100vh;
+}
+.header {
+  display: flex;
+  max-width: 80vw;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  z-index: 1;
+  background: #122331;
+}
+.header a {
+  color: white;
+}
+.logo {
+  font-size: 2rem;
+}
+.menu-items {
+  display: flex;
+  align-items: center;
+}
+.menu-items li {
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease-in-out;
+}
+.menu-items li:hover {
+  background-color: #ff652f;
+}
+.dropdown {
+  position: relative;
+}
+.dropdown-menus,
+.menu-right {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  background-color: #122331;
+  width: 100%;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  visibility: hidden;
+}
+.dropdown-right {
+  position: relative;
+}
+.menu-right {
+  top: 0;
+  left: 110%;
+  opacity: 0;
+  visibility: hidden;
+}
+.dropdown:hover .dropdown-menus {
+  top: 34px;
+  opacity: 1;
+  visibility: visible;
+}
+.dropdown-right:hover .menu-right {
+  left: 100%;
+  opacity: 1;
+  visibility: visible;
+}
+.menu-item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.mega-menu {
+  position: absolute;
+  max-width: 100vw;
+  top: 100px;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+.mega-menu-container:hover .mega-menu {
+  opacity: 1;
+  visibility: visible;
+  top: 70px;
+  left: 0;
+}
+.content {
+  background: #122331;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  padding: 2rem 2rem;
+}

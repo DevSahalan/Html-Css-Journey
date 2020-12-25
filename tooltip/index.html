@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        margin-top: 10%;
+        margin-left: 10%;
+      }
+      [data-tooltip] {
+        position: relative;
+      }
+      [data-tooltip]::after {
+        content: attr(data-tooltip);
+        width: 70px;
+        position: absolute;
+        left: calc(50% - 35px);
+        font-size: 0.8rem;
+        bottom: 125%;
+        background-color: black;
+        color: white;
+        padding: 0.5rem;
+        transform: translateY(20%) scale(0);
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.3s, transform 0.2s;
+        border-radius: 10px;
+        text-align: center;
+      }
+      [data-tooltip]:hover::after {
+        transform: translateY(0%) scale(1);
+        visibility: visible;
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <span data-tooltip="An Example">Hover me</span>
+      <span data-tooltip="adasd">adasd</span>
+      <span data-tooltip="asdasd">asdasd</span>
+      <span data-tooltip="safasf">safasf</span>
+      <span data-tooltip="afasf">afasf</span>
+    </div>
+  </body>
+</html>

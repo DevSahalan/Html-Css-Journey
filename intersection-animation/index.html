@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .section1,
+      .section3 {
+        min-height: 100vh;
+      }
+
+      .section2,
+      .section4 {
+        display: flex;
+      }
+      .section2 > *,
+      .section4 > * {
+        flex: 1;
+        opacity: 0;
+        /* animation: anim1 1s forwards; */
+      }
+      @keyframes anim1 {
+        from {
+          transform: translateY(-100px);
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0px);
+        }
+      }
+      @keyframes anim2 {
+        from {
+          transform: translateX(-100px);
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="section1"></div>
+    <div class="section2">
+      <div class="left anim" data-delay="0.5s" data-sec="left">
+        <p>item1</p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores,
+          facere?
+        </p>
+      </div>
+      <div class="right anim" data-delay="1s" data-sec="right">
+        <div class="item2">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem,
+          sequi.
+        </div>
+      </div>
+    </div>
+    <div class="section3"></div>
+    <div class="section4">
+      <div class="left anim" data-delay="0.5s" data-sec="top">
+        <p>item1</p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores,
+          facere?
+        </p>
+      </div>
+      <div class="right anim" data-delay="1s" data-sec="right">
+        <div class="item2">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem,
+          sequi.
+        </div>
+      </div>
+    </div>
+    <script>
+      const section2 = document.querySelectorAll('.anim')
+      const observer = new IntersectionObserver((entries) => {
+        // if (entries[0].intersectionRatio > 0) {
+        //   entries[0].target.style.animation = `anim1 1s forwards`
+        // } else {
+        //   entries[0].target.style.animation = `none`
+        // }
+        entries.forEach((entry) => {
+          console.log(entry.target.dataset.sec)
+          if (
+            entry.intersectionRatio > 0 &&
+            entry.target.dataset.sec === 'right'
+          ) {
+            entry.target.style.animation = `anim1 2s ${entry.target.dataset.delay} forwards`
+            entry.target.style.backgroundColor = 'red'
+          } else if (
+            entry.intersectionRatio > 0 &&
+            entry.target.dataset.sec === 'left'
+          ) {
+            entry.target.style.animation = `anim1 2s ${entry.target.dataset.delay} forwards`
+            entry.target.style.backgroundColor = 'green'
+          } else if (
+            entry.intersectionRatio > 0 &&
+            entry.target.dataset.sec === 'top'
+          ) {
+            entry.target.style.animation = `anim2 2s ${entry.target.dataset.delay} forwards`
+            entry.target.style.backgroundColor = 'green'
+          } else {
+            entry.target.style.animation = `none`
+          }
+        })
+      })
+      section2.forEach((section) => {
+        observer.observe(section)
+      })
+    </script>
+  </body>
+</html>

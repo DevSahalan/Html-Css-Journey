@@ -1,0 +1,16 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: minmax(150px, 25%) 1fr;
+}
+.sidebar {
+  min-height: 100vh;
+  background-color: aqua;
+  display: grid;
+  place-items: center;
+}

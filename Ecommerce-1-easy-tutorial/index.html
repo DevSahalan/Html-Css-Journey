@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ResStore</title>
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <!-- default css -->
+    <link rel="stylesheet" href="default.css" />
+    <!-- main Css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <div class="container-fluid">
+        <!-- NAVBAR -->
+        <div class="navbar">
+          <div class="nav-logo">
+            <img src="img/logo.png" class="logo" />
+          </div>
+          <nav class="nav">
+            <ul id="nav-items">
+              <li><a href="">Home</a></li>
+              <li><a href="">Products</a></li>
+              <li><a href="singleproduct.html">About</a></li>
+              <li><a href="">Contact</a></li>
+              <li><a href="">Account</a></li>
+              <a href=""><i class="fas fa-shopping-cart"></i></a>
+            </ul>
+          </nav>
+
+          <img src="img/menu.png" class="menubar" onclick="toggleNav()" />
+        </div>
+        <!-- END OF NAVBAR -->
+        <div class="header-hero py-5">
+          <div class="row">
+            <div class="col-2 text-sm-center">
+              <h2 class="text-capitalize">give your workout</h2>
+              <h2 class="text-capitalize my-1">a new style</h2>
+              <p class="text-capitalize">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Maxime, aspernatur.
+              </p>
+              <a href="" class="text-capitalize btn btn-orange"
+                >explore now &#x2192;</a
+              >
+            </div>
+            <div class="col-2">
+              <img src="img/image1.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- end of header -->
+
+    <!-- Featured section -->
+    <section class="featured py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <img src="img/category-1.jpg" alt="" />
+          </div>
+          <div class="col-3">
+            <img src="img/category-2.jpg" alt="" />
+          </div>
+          <div class="col-3">
+            <img src="img/category-3.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of Featured section -->
+
+    <!-- featured products -->
+    <section class="featured-products">
+      <div class="container">
+        <h1 class="text-center text-capitalize pb-5">featured products</h1>
+        <div class="row text-center">
+          <!-- single product -->
+          <div class="col-4 single-product">
+            <img src="img/product-1.jpg" alt="" />
+            <h4 class="text-capitalize">printed t-shirt</h4>
+            <div class="ratings">
+              <span class="mx-2"><i class="fas fa-star"></i></span>
+              <span class="mx-2"><i class="fas fa-star"></i></span>
+              <span class="mx-2"><i class="fas fa-star"></i></span>
+              <span class="mx-2"><i class="fas fa-star"></i></span>
+              <span class="mx-2"><i class="far fa-star"></i></span>
+            </div>
+            <p>100$</p>
+          </div>
+          <!-- end of single product -->
+          <!-- single product -->
+          <div class="col-4 single-product">
+            <img src="img/product-2.jpg" alt="" />
+            <h4 class="text-capitalize">printed t-shirt</h4>
+            <div class="ratings">
+              <span class="mx-2"><i class="fas fa-star"></i></span>
+              <span class="mx-2"><i class="fas fa-star"></i></span>
+              <span class="mx-2"><i class="fas fa-star"></i></span>
+              <span class="mx-2"><i class="fas fa-star"></i></span>
+              <span class="mx-2"><i class="far fa-star"></i></span>
+            </div>
+            <p>100$</p>
+          </div>
+          <!-- end of single product -->
+          <!-- single product -->
+          <div class="col-4 single-product">
+            <img src="img/product-3.jpg" alt="" />
+            <h4 class="text-capitalize">printed t-shirt</h4>
+            <div class="ratings">
+              <span class="mx-2"><i class="fas fa-star"></i></span>
+              <span class="mx-2"><i class="fas fa-star"></i></span>
+              <span class="mx-2"><i class="fas fa-star"></i></span>
+              <span class="mx-2"><i class="fas fa-star"></i></span>
+              <span class="mx-2"><i class="far fa-star"></i></span>
+            </div>
+            <p>100$</p>
+          </div>
+          <!-- end of single product -->
+          <!-- single product -->
+          <div class="col-4 single-product">
+            <img src="img/product-4.jpg" alt="" />
+            <h4 class="text-capitalize">printed t-shirt</h4>
+            <div class="ratings">
+              <span class="mx-2"><i class="fas fa-star"></i></span>
+              <span class="mx-2"><i class="fas fa-star"></i></span>
+              <span class="mx-2"><i class="fas fa-star"></i></span>
+              <span class="mx-2"><i class="fas fa-star"></i></span>
+              <span class="mx-2"><i class="far fa-star"></i></span>
+            </div>
+            <p>100$</p>
+          </div>
+          <!-- end of single product -->
+        </div>
+      </div>
+    </section>
+    <!-- end of featured products -->
+
+    <!-- Latest Product -->
+    <section class="latest-products">
+      <div class="container">
+        <h1 class="text-center text-capitalize pb-5">latest products</h1>
+        <div class="row text-center">
+          <!-- single product -->
+          <div class="col-4 single-product">
+            <img src="img/product-5.jpg" alt="" />
+            <h4 class="text-capitalize">printed t-shirt</h4>
+            <div class="ratings">
+              <span class="mx-2"><i class="fas fa-star"></i></span>
+              <span class="mx-2"><i class="fas fa-star"></i></span>
+              <span class="mx-2"><i class="fas fa-star"></i></span>
+              <span class="mx-2"><i class="fas fa-star"></i></span>
+              <span class="mx-2"><i class="far fa-star"></i></span>
+            </div>
+            <p>100$</p>
+          </div>
+          <!-- end of single product -->
+          <!-- single product -->
+          <div class="col-4 single-product">
+            <img src="img/product-6.jpg" alt="" />
+            <h4 class="text-capitalize">printed t-shirt</h4>
+            <div class="ratings">
+              <span class="mx-2"><i class="fas fa-star"></i></span>
+              <span class="mx-2"><i class="fas fa-star"></i></span>
+              <span class="mx-2"><i class="fas fa-star"></i></span>
+              <span class="mx-2"><i class="fas fa-star"></i></span>
+              <span class="mx-2"><i class="far fa-star"></i></span>
+            </div>
+            <p>100$</p>
+          </div>
+          <!-- end of single product -->
+          <!-- single product -->
+          <div class="col-4 single-product">
+            <img src="img/product-7.jpg" alt="" />
+            <h4 class="text-capitalize">printed t-shirt</h4>
+            <div class="ratings">
+              <span class="mx-2"><i class="fas fa-star"></i></span>
+              <span class="mx-2"><i class="fas fa-star"></i></span>
+              <span class="mx-2"><i class="fas fa-star"></i></span>
+              <span class="mx-2"><i class="fas fa-star"></i></span>
+              <span class="mx-2"><i class="far fa-star"></i></span>
+            </div>
+            <p>100$</p>
+          </div>
+          <!-- end of single product -->
+          <!-- single product -->
+          <div class="col-4 single-product">
+            <img src="img/product-8.jpg" alt="" />
+            <h4 class="text-capitalize">printed t-shirt</h4>
+            <div class="ratings">
+              <span class="mx-2"><i class="fas fa-star"></i></span>
+              <span class="mx-2"><i class="fas fa-star"></i></span>
+              <span class="mx-2"><i class="fas fa-star"></i></span>
+              <span class="mx-2"><i class="fas fa-star"></i></span>
+              <span class="mx-2"><i class="far fa-star"></i></span>
+            </div>
+            <p>100$</p>
+          </div>
+          <!-- end of single product -->
+          <!-- single product -->
+          <div class="col-4 single-product">
+            <img src="img/product-9.jpg" alt="" />
+            <h4 class="text-capitalize">printed t-shirt</h4>
+            <div class="ratings">
+              <span class="mx-2"><i class="fas fa-star"></i></span>
+              <span class="mx-2"><i class="fas fa-star"></i></span>
+              <span class="mx-2"><i class="fas fa-star"></i></span>
+              <span class="mx-2"><i class="fas fa-star"></i></span>
+              <span class="mx-2"><i class="far fa-star"></i></span>
+            </div>
+            <p>100$</p>
+          </div>
+          <!-- end of single product -->
+          <!-- single product -->
+          <div class="col-4 single-product">
+            <img src="img/product-10.jpg" alt="" />
+            <h4 class="text-capitalize">printed t-shirt</h4>
+            <div class="ratings">
+              <span class="mx-2"><i class="fas fa-star"></i></span>
+              <span class="mx-2"><i class="fas fa-star"></i></span>
+              <span class="mx-2"><i class="fas fa-star"></i></span>
+              <span class="mx-2"><i class="fas fa-star"></i></span>
+              <span class="mx-2"><i class="far fa-star"></i></span>
+            </div>
+            <p>100$</p>
+          </div>
+          <!-- end of single product -->
+          <!-- single product -->
+          <div class="col-4 single-product">
+            <img src="img/product-11.jpg" alt="" />
+            <h4 class="text-capitalize">printed t-shirt</h4>
+            <div class="ratings">
+              <span class="mx-2"><i class="fas fa-star"></i></span>
+              <span class="mx-2"><i class="fas fa-star"></i></span>
+              <span class="mx-2"><i class="fas fa-star"></i></span>
+              <span class="mx-2"><i class="fas fa-star"></i></span>
+              <span class="mx-2"><i class="far fa-star"></i></span>
+            </div>
+            <p>100$</p>
+          </div>
+          <!-- end of single product -->
+          <!-- single product -->
+          <div class="col-4 single-product">
+            <img src="img/product-12.jpg" alt="" />
+            <h4 class="text-capitalize">printed t-shirt</h4>
+            <div class="ratings">
+              <span class="mx-2"><i class="fas fa-star"></i></span>
+              <span class="mx-2"><i class="fas fa-star"></i></span>
+              <span class="mx-2"><i class="fas fa-star"></i></span>
+              <span class="mx-2"><i class="fas fa-star"></i></span>
+              <span class="mx-2"><i class="far fa-star"></i></span>
+            </div>
+            <p>100$</p>
+          </div>
+          <!-- end of single product -->
+        </div>
+      </div>
+    </section>
+    <!-- end of Latest Product -->
+    <!-- Offer Product -->
+    <section class="offer-product">
+      <div class="container-fluid">
+        <div class="row h-100">
+          <div class="col-2">
+            <img src="img/exclusive.png" alt="" class="offer-img" />
+          </div>
+          <div class="col-2 text-sm-center">
+            <h4 class="text-capitalize">exclusively available in redstore</h4>
+            <h1 class="text-capitalize">smart band 4</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
+              excepturi.
+            </p>
+            <a href="" class="btn btn-orange text-capitalize"
+              >buy now &#x2192;</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end Offer Product -->
+    <!-- Testimonial -->
+    <section class="testimonials py-5">
+      <div class="container">
+        <div class="row text-center">
+          <!-- single testimonial -->
+          <div class="col-3 my-sm-3 testimonial">
+            <i class="fa fa-quote-left"></i>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
+              eveniet maxime quaerat! Nostrum, commodi deleniti.
+            </p>
+            <div class="ratings py-2">
+              <span><i class="fas fa-star"></i></span>
+              <span class="mx-2"><i class="fas fa-star"></i></span>
+              <span class="mx-2"><i class="fas fa-star"></i></span>
+              <span class="mx-2"><i class="fas fa-star"></i></span>
+              <span class="mx-2"><i class="far fa-star"></i></span>
+            </div>
+            <img src="img/user-1.png" alt="" class="testomonial-img mt-3" />
+            <h4 class="text-capitalize">lori megan</h4>
+          </div>
+          <!-- end of single testimonial -->
+          <!-- single testimonial -->
+          <div class="col-3 my-sm-3 testimonial">
+            <i class="fa fa-quote-left"></i>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
+              eveniet maxime quaerat! Nostrum, commodi deleniti.
+            </p>
+            <div class="ratings py-2">
+              <span><i class="fas fa-star"></i></span>
+              <span class="mx-2"><i class="fas fa-star"></i></span>
+              <span class="mx-2"><i class="fas fa-star"></i></span>
+              <span class="mx-2"><i class="fas fa-star"></i></span>
+              <span class="mx-2"><i class="far fa-star"></i></span>
+            </div>
+            <img src="img/user-2.png" alt="" class="testomonial-img mt-3" />
+            <h4 class="text-capitalize">lori megan</h4>
+          </div>
+          <!-- end of single testimonial -->
+          <!-- single testimonial -->
+          <div class="col-3 my-sm-3 testimonial">
+            <i class="fa fa-quote-left"></i>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
+              eveniet maxime quaerat! Nostrum, commodi deleniti.
+            </p>
+            <div class="ratings py-2">
+              <span><i class="fas fa-star"></i></span>
+              <span class="mx-2"><i class="fas fa-star"></i></span>
+              <span class="mx-2"><i class="fas fa-star"></i></span>
+              <span class="mx-2"><i class="fas fa-star"></i></span>
+              <span class="mx-2"><i class="far fa-star"></i></span>
+            </div>
+            <img src="img/user-3.png" alt="" class="testomonial-img mt-3" />
+            <h4 class="text-capitalize">lori megan</h4>
+          </div>
+          <!-- end of single testimonial -->
+        </div>
+      </div>
+    </section>
+    <!-- End Of Testimonial -->
+    <!-- brands -->
+    <section class="brands py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-5">
+            <img src="img/logo-coca-cola.png" alt="" />
+          </div>
+          <div class="col-5">
+            <img src="img/logo-godrej.png" alt="" />
+          </div>
+          <div class="col-5">
+            <img src="img/logo-oppo.png" alt="" />
+          </div>
+          <div class="col-5">
+            <img src="img/logo-paypal.png" alt="" />
+          </div>
+          <div class="col-5">
+            <img src="img/logo-philips.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--end of brands -->
+
+    <script>
+      var navItems = document.getElementById('nav-items')
+
+      function toggleNav() {
+        if (navItems.style.maxHeight == '0px') {
+          navItems.style.maxHeight = '50vh'
+          navItems.style.height = '50vh'
+        } else {
+          navItems.style.maxHeight = '0px'
+          navItems.style.height = '0px'
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Float</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .box1 {
+        background-color: blueviolet;
+        width: 300px;
+        float: left;
+
+        padding: 10px;
+      }
+      .box2 {
+        float: left;
+        width: 300px;
+        height: 500px;
+        background-color: rgb(24, 145, 40);
+        padding: 10px;
+      }
+      .box3 {
+        margin: 10px;
+        float: left;
+        width: 300px;
+        background-color: rgb(168, 15, 110);
+        padding: 10px;
+      }
+      .box4 {
+        clear: both;
+      }
+      .container {
+        text-align: center;
+      }
+      @media (max-width: 917px) {
+        .box3 {
+          margin-left: 40%;
+        }
+        .box1,
+        .box2,
+        .box3 {
+          float: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quia
+        doloremque repellat eveniet animi, minima adipisci suscipit rerum, eaque
+        officia deleniti accusantium quod autem quisquam architecto laborum
+        libero recusandae reiciendis?
+      </div>
+      <div class="box2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quia
+        doloremque repellat eveniet animi, minima adipisci suscipit rerum, eaque
+        officia deleniti accusantium quod autem quisquam architecto laborum
+        libero recusandae reiciendis?
+      </div>
+      <div class="box3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quia
+        doloremque repellat eveniet animi, minima adipisci suscipit rerum, eaque
+        officia deleniti accusantium quod autem quisquam architecto laborum
+        libero recusandae reiciendis?
+      </div>
+      <div class="box4">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quia
+        doloremque repellat eveniet animi, minima adipisci suscipit rerum, eaque
+        officia deleniti accusantium quod autem quisquam architecto laborum
+        libero recusandae reiciendis?
+      </div>
+    </div>
+  </body>
+</html>

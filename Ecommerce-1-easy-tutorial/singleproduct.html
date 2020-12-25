@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ResStore</title>
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <!-- default css -->
+    <link rel="stylesheet" href="default.css" />
+    <!-- main Css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <div class="container-fluid">
+        <!-- NAVBAR -->
+        <div class="navbar">
+          <div class="nav-logo">
+            <img src="img/logo.png" class="logo" />
+          </div>
+          <nav class="nav">
+            <ul id="nav-items">
+              <li><a href="">Home</a></li>
+              <li><a href="">Products</a></li>
+              <li><a href="singleproduct.html">About</a></li>
+              <li><a href="">Contact</a></li>
+              <li><a href="">Account</a></li>
+              <a href=""><i class="fas fa-shopping-cart"></i></a>
+            </ul>
+          </nav>
+
+          <img src="img/menu.png" class="menubar" onclick="toggleNav()" />
+        </div>
+        <!-- END OF NAVBAR -->
+        <div class="header-hero py-5">
+          <div class="row">
+            <div class="col-2 text-sm-center">
+              <h2 class="text-capitalize">give your workout</h2>
+              <h2 class="text-capitalize my-1">a new style</h2>
+              <p class="text-capitalize">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Maxime, aspernatur.
+              </p>
+              <a href="" class="text-capitalize btn btn-orange"
+                >explore now &#x2192;</a
+              >
+            </div>
+            <div class="col-2">
+              <img src="img/image1.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- end of header -->
+
+    <div class="product-details">
+      <div class="row">
+        <div class="col-2">
+          <div>
+            <img src="img/gallery-1.jpg" alt="" class="product-img" />
+          </div>
+          <div class="small-image-row">
+            <div class="small-image-col">
+              <img src="img/gallery-1.jpg" alt="" class="small-img" />
+            </div>
+            <div class="small-image-col">
+              <img src="img/gallery-2.jpg" alt="" class="small-img" />
+            </div>
+            <div class="small-image-col">
+              <img src="img/gallery-3.jpg" alt="" class="small-img" />
+            </div>
+            <div class="small-image-col">
+              <img src="img/gallery-4.jpg" alt="" class="small-img" />
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <img src="img/image1.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <script>
+      var navItems = document.getElementById('nav-items')
+
+      function toggleNav() {
+        if (navItems.style.maxHeight == '0px') {
+          navItems.style.maxHeight = '50vh'
+          navItems.style.height = '50vh'
+        } else {
+          navItems.style.maxHeight = '0px'
+          navItems.style.height = '0px'
+        }
+      }
+    </script>
+    <script>
+      const productImg = document.querySelector('.product-img')
+      const smallImg = document.querySelectorAll('.small-img')
+      console.log(smallImg)
+
+      smallImg[0].onclick = () => {
+        console.log(smallImg[0].src)
+        productImg.src = smallImg[0].src
+      }
+      smallImg[1].onclick = () => {
+        productImg.src = smallImg[1].src
+      }
+      smallImg[2].onclick = () => {
+        productImg.src = smallImg[2].src
+      }
+      smallImg[3].onclick = () => {
+        productImg.src = smallImg[3].src
+      }
+    </script>
+  </body>
+</html>

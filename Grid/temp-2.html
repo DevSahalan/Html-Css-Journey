@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      img {
+        max-width: 100%;
+      }
+      .grid {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 2fr 1fr 3fr;
+        grid-template-rows: 400px;
+        grid-auto-rows: 150px;
+        grid-template-areas:
+          'img des des'
+          'node node reddit'
+          'bibi bibi nuxt';
+      }
+      img {
+        grid-area: img;
+      }
+      .des {
+        grid-area: des;
+      }
+      .node {
+        grid-area: node;
+      }
+      .reddit {
+        grid-area: reddit;
+      }
+      .bibi {
+        grid-area: bibi;
+      }
+      .nuxt {
+        grid-area: nuxt;
+      }
+      @media (max-width: 768px) {
+        .grid {
+          grid-template-columns: 1fr;
+          grid-template-rows: 150px;
+          grid-auto-rows: auto;
+          grid-template-areas:
+            'des'
+            'node'
+            'reddit'
+            'bibi'
+            'img'
+            'nuxt';
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid">
+      <img src="img-temp-2/simi.spec.jpg" alt="" />
+      <div class="des">
+        trojanischeresel.de Hi, ich bin Simon (34)! Meinen Code teile ich auf
+        GitHub, meine Fotos zeige ich auf flickr. Ich blogge über Ruby (on
+        Rails), Python, Elixir und JavaScript und was ich sonst so lerne. Ich
+        blogge auch über kochen mit der Mikrowelle. Schreib mir! Zu meinen
+        Kontaktdaten. Open Source Web-Apps
+      </div>
+      <div class="node">
+        Rules of the Velominati Not sure how to behave on a road bike. What to
+        wear? What to pack, what not? NodeJS
+      </div>
+      <div class="reddit">
+        Reddit API Image Getter Download Images from a Reddit Channel.
+        Optionally save them to disk, if you like. NodeJS
+      </div>
+      <div class="bibi">
+        Bibi Blocksberg Hörspiele auf Spotify (sortiert) Spotify kann vieles,
+        aber ordentlich suchen und finden kann es nicht. NuxtJS
+      </div>
+      <div class="nuxt">
+        Sherlock Holmes Hörspiele auf Spotify (sortiert) Spotify kann vieles,
+        aber ordentlich suchen und finden kann es nicht. NuxtJS
+      </div>
+    </div>
+  </body>
+</html>
